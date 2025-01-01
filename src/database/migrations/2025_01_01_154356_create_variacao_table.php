@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('variacao', function (Blueprint $table) {
             $table->id();
-            $table->string('tamanho',20)->nullable();
-            $table->string('peso',20)->nullable();
-            $table->string('cor',20)->nullable();
+            $table->string('tamanho',50)->nullable();
+            $table->string('peso',50)->nullable();
+            $table->string('cor',50)->nullable();
             $table->decimal('preco',10,2);
             $table->integer('estoque');
 
