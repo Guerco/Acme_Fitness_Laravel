@@ -2,9 +2,9 @@
 
 namespace App\Http\Services;
 
+use App\Http\Requests\CategoriaRequest;
 use App\Models\Categoria;
 use App\Http\Resources\CategoriaResource;
-use Illuminate\Foundation\Http\FormRequest;
 
 
 class CategoriaService  {
@@ -21,11 +21,11 @@ class CategoriaService  {
         return new CategoriaResource( $categoria );
     }
 
-    public function create ( FormRequest $request ) {
+    public function create ( CategoriaRequest $request ) {
         Categoria::create( $request->validated() );
     }
 
-    public function edit ( FormRequest $request, $id ) {
+    public function edit ( CategoriaRequest $request, $id ) {
         $categoria = Categoria::findOrFail( $id  );
 
         $categoria->update( $request->validated() );
