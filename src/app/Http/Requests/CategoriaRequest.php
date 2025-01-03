@@ -22,11 +22,13 @@ class CategoriaRequest extends FormRequest
     public function rules(): array
     {
         $rules = [
-            'nome' =>   [
-                            'required', 
-                            'max:50',
-                        ] ,
-            'descricao' => 'nullable',
+            'nome' => [
+                'required', 
+                'max:50',
+            ] ,
+            'descricao' => [
+                'nullable',
+            ] ,
         ];
 
         if ($this->method() === 'PUT') {
@@ -35,10 +37,19 @@ class CategoriaRequest extends FormRequest
                     'nullable',
                     'max:50',
                 ] ,
-                'descricao' => 'nullable',
+                'descricao' => [
+                    'nullable',
+                ] ,
             ];
         }
 
         return $rules;
+    }
+
+    public function messages() : array {
+        return [
+            'nome.required' => 'O nome não foi informado.',
+            'nome.max' => 'O nome deve possuir no máximo 50 caracteres.',       
+        ];
     }
 }
