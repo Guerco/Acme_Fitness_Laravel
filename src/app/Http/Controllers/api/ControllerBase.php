@@ -47,7 +47,7 @@ class ControllerBase
     {
         $this->service->remove( $id );
 
-        $this->gerarResponse( 'destroy' );
+        return $this->gerarResponse( 'destroy' );
     }
 
     private function gerarResponse( $metodo  , $dados = null ) {
