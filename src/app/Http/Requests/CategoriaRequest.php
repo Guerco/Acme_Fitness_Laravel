@@ -22,15 +22,19 @@ class CategoriaRequest extends FormRequest
     public function rules(): array
     {
         $rules = [
-            'nome' =>   'required', 
-                        'max:50',
+            'nome' =>   [
+                            'required', 
+                            'max:50',
+                        ] ,
             'descricao' => 'nullable',
         ];
 
         if ($this->method() === 'PUT') {
             $rules = [
-                'nome' =>   'nullable',
-                            'max:50',
+                'nome' =>   [
+                    'nullable',
+                    'max:50',
+                ] ,
                 'descricao' => 'nullable',
             ];
         }
