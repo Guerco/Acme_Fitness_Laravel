@@ -18,7 +18,7 @@ class ClienteResource extends JsonResource
             'id' => $this->id,
             'nome' => $this->nome,
             'cpf' => $this->cpf,
-            'data' => $this->data_nascimento,
+            'data_nascimento' => $this->data_nascimento,
         ];
     }
 }
