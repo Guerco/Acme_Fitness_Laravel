@@ -41,7 +41,8 @@ class ProdutoRequest extends FormRequest
                                 ] ,   
             'categoria.id' =>   [
                                     'required' , 
-                                    'integer'
+                                    'integer' ,
+                                    'exists:categoria,id' ,
                                 ] ,
         ];
 
@@ -67,7 +68,8 @@ class ProdutoRequest extends FormRequest
                                     ] ,   
                 'categoria.id' =>   [
                                         'nullable' , 
-                                        'integer'
+                                        'integer' ,
+                                        'exists:categoria,id' ,
                                     ] ,
             ];
         }
