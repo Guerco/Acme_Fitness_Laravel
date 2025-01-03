@@ -7,6 +7,7 @@ use App\Http\Controllers\Api\ClienteController;
 use App\Http\Controllers\Api\EnderecoController;
 use App\Http\Controllers\Api\ProdutoController;
 use App\Http\Controllers\Api\VariacaoController;
+use App\Http\Controllers\Api\VendaController;
 
 
 Route::apiResource( 'categorias',  CategoriaController::class)->only (
@@ -55,6 +56,15 @@ Route::apiResource( 'variacoes',  VariacaoController::class)->only (
         'show', 
         'store', 
         'update', 
+        'destroy',
+    ]
+);
+
+Route::apiResource( 'vendas',  VendaController::class)->only (
+    [
+        'index', 
+        'show', 
+        'store', 
         'destroy',
     ]
 );
