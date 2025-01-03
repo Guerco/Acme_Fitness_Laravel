@@ -37,3 +37,13 @@ Route::apiResource( 'enderecos',  EnderecoController::class)->only (
         'destroy',
     ]
 );
+
+Route::apiResource( 'produtos',  ProdutoController::class)->only (
+    [
+        'index', 
+        'show', 
+        'store', 
+        'update', 
+        'destroy',
+    ]
+);
