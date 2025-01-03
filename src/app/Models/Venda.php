@@ -11,7 +11,7 @@ class Venda extends Model
 
     protected $table = 'venda';
 
-    protected $filable = [
+    protected $fillable = [
         'valor_total',
         'valor_frete',
         'descontos',
