@@ -36,10 +36,10 @@ class VariacaoRequest extends FormRequest
                             'max:50',
                         ] ,
             'preco' =>  [
-                            'required',
-                            'numeric',      
-                            'min:1',
-                            'regex:/^\d+(\.\d{1,2})?$/' ,
+                            'required' ,
+                            'numeric' ,      
+                            'decimal:0,2' ,
+                            'min:0.1',
                         ] ,   
             'estoque' =>   [
                                 'required' , 
@@ -70,12 +70,11 @@ class VariacaoRequest extends FormRequest
                                 'max:50',
                             ] ,
                 'preco' =>  [
-                                'nullable',
-                                'numeric',      
-                                'min:1',
-                                'regex:/^\d+(\.\d{1,2})?$/' ,
-
-                            ] ,   
+                                'nullable' ,
+                                'numeric' ,      
+                                'decimal:0,2' ,
+                                'min:0.1',
+                            ] ,  
                 'estoque' =>   [
                                     'nullable' , 
                                     'integer' ,
