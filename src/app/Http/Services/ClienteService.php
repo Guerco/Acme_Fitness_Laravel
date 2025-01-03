@@ -2,9 +2,9 @@
 
 namespace App\Http\Services;
 
+use App\Http\Requests\ClienteRequest;
 use App\Models\Cliente;
 use App\Http\Resources\ClienteResource;
-use Illuminate\Foundation\Http\FormRequest;
 
 
 class ClienteService {
@@ -20,11 +20,11 @@ class ClienteService {
         return new ClienteResource( $cliente );
     }
 
-    public function create ( FormRequest $request ) {
+    public function create ( ClienteRequest $request ) {
         Cliente::create( $request->validated() );
     }
 
-    public function edit ( FormRequest $request, $id ) {
+    public function edit ( ClienteRequest $request, $id ) {
         $cliente = Cliente::findOrFail( $id  );
 
         $cliente->update( $request->validated() );
