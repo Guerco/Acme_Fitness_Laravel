@@ -34,7 +34,7 @@ class ProdutoService {
 
         $dados = $request->validated();
         if (isset($request['categoria']['id'])) {
-            $dados['categoria'] = $request['categoria']['id'];
+            $dados['categoria_id'] = $request['categoria']['id'];
         }
 
         $produto->update( $dados );
