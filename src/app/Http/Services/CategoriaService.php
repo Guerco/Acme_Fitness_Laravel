@@ -16,7 +16,7 @@ class CategoriaService  {
     }
 
     public function findById  ( $id ) {
-        $categoria = Categoria::find( $id );
+        $categoria = Categoria::findOrFail( $id );
 
         return new CategoriaResource( $categoria );
     }

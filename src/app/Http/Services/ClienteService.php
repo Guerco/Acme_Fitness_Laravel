@@ -15,7 +15,7 @@ class ClienteService {
     }
 
     public function findById  ( $id ) {
-        $cliente = Cliente::find( $id );
+        $cliente = Cliente::findOrFail( $id );
 
         return new ClienteResource( $cliente );
     }

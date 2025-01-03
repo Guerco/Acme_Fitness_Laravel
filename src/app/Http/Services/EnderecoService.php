@@ -15,7 +15,7 @@ class EnderecoService {
     }
 
     public function findById  ( $id ) {
-        $endereco = Endereco::find( $id );
+        $endereco = Endereco::findOrFail( $id );
 
         return new EnderecoResource( $endereco );
     }
