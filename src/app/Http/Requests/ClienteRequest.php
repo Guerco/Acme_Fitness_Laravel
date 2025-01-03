@@ -11,7 +11,7 @@ class ClienteRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,24 +22,36 @@ class ClienteRequest extends FormRequest
     public function rules(): array
     {
         $rules = [
-            'nome' =>   'required', 
-                        'max:50',
-            'cpf' =>    'required',
-                        'regex:/^\d{3}\.\d{3}\.\d{3}\-\d{2}$/',
-            'data_nascimento' =>    'required',
-                                    'date',
-                                    'date_format:Y-m-d',
+            'nome' =>   [
+                            'required', 
+                            'max:50',
+                        ] ,
+            'cpf' =>    [
+                            'required',
+                            'regex:/^\d{3}\.\d{3}\.\d{3}\-\d{2}$/',
+                        ] ,    
+            'data_nascimento' =>    [
+                                        'required',
+                                        'date',
+                                        'date_format:Y-m-d',
+                                    ] ,    
         ];
 
         if ($this->method() === 'PUT') {
             $rules = [
-                'nome' =>   'nullable', 
-                            'max:50',
-                'cpf' =>    'nullable',
-                            'regex:/^\d{3}\.\d{3}\.\d{3}\-\d{2}$/',
-                'data_nascimento' =>    'nullable',
-                                        'date',
-                                        'date_format:Y-m-d',    
+                'nome' =>   [
+                                'nullable', 
+                                'max:50',
+                            ] ,
+                'cpf' =>    [
+                                'nullable',
+                                'regex:/^\d{3}\.\d{3}\.\d{3}\-\d{2}$/',
+                            ] ,    
+                'data_nascimento' =>    [
+                                            'nullable',
+                                            'date',
+                                            'date_format:Y-m-d',
+                                        ] ,
             ];
         }
 
