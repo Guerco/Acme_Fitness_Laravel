@@ -4,8 +4,6 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Requests\EnderecoRequest;
 use App\Http\Services\EnderecoService;
-use App\Models\Endereco;
-use App\Http\Resources\EnderecoResource;
 
 class EnderecoController extends ControllerBase
 {

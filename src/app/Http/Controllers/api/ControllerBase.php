@@ -2,11 +2,6 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Http\Controllers\Controller;
-use App\Http\Requests\CategoriaRequest;
-use App\Http\Services\CategoriaService;
-use Illuminate\Foundation\Http\FormRequest;
-
 class ControllerBase
 {
     private $service;
