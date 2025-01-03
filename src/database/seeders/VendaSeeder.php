@@ -12,7 +12,7 @@ class VendaSeeder extends Seeder
      */
     public function run(): void
     {
-        $qtd = 1; 
+        $qtd = 10; 
         \App\Models\Venda::factory( $qtd )->create();
     }
 }
