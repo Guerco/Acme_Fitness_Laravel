@@ -165,5 +165,5 @@
 - 500 - Falha interna na execução da operação
 
 ---
-Para mais informações sobre o projeto *[veja aqui](/Acme_Fitness_Laravel/README.md)*
+Para mais informações sobre o projeto *[veja aqui](/README.md)*
 ---

@@ -4,12 +4,12 @@
 ---
 
 ## Executando os Testes
-- Para rodagem dos casos de teste, basta executar o comando no diretório *[/src](/Acme_Fitness_Laravel/src/)*
+- Para rodagem dos casos de teste, basta executar o comando no diretório *[/src](/src/)*
 
 ``` bash
 php artisan test
 ```
-- Este comando executará todos os casos de teste em *[/tests/Unit](/Acme_Fitness_Laravel/src/tests/Unit/;)*
+- Este comando executará todos os casos de teste em *[/tests/Unit](/src/tests/Unit/;)*
 
 ### Você também pode executar testes por grupos:
 ``` bash
@@ -30,14 +30,14 @@ php artisan test --group=categorias
 
 ---
 
-### O diretório dos testes é *[/src/tests/Unit](/Acme_Fitness_Laravel/src/tests/Unit/Http/Produto/PostProdutoTest.phpd)*
+### O diretório dos testes é *[/src/tests/Unit](/src/tests/Unit/Http/Produto/PostProdutoTest.phpd)*
 - Nele você pode personalizar os testes e as requisições http testadas
 
 ---
 
 ### Configurando as Requests
 
-Ex: *[PostProdutoTest](/Acme_Fitness_Laravel/src/tests/Unit/Http/Produto/PostProdutoTest.phpd)*
+Ex: *[PostProdutoTest](/src/tests/Unit/Http/Produto/PostProdutoTest.phpd)*
 ``` php
 $response = $this->postJson(
     '/api/produtos/' , 
@@ -61,6 +61,6 @@ php artisan test --testdox
 ```
 ---
 
-Para mais informações sobre o projeto *[veja aqui](/Acme_Fitness_Laravel/README.md)*
+Para mais informações sobre o projeto *[veja aqui](/README.md)*
 
 ---

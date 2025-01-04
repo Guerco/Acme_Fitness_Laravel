@@ -1,9 +1,9 @@
 
 # Validação
 
-A validação dos dados é fornecida pelas [FormRequests](/Acme_Fitness_Laravel/src/app/Http/Requests/), implementadas para cada entidade.
+A validação dos dados é fornecida pelas [FormRequests](/src/app/Http/Requests/), implementadas para cada entidade.
 
-- Ex: [VendaRequest](/Acme_Fitness_Laravel/src/app/Http/Requests/VendaRequest.php)
+- Ex: [VendaRequest](/src/app/Http/Requests/VendaRequest.php)
 ```php
 public function rules(): array
 {
@@ -178,7 +178,7 @@ public function rules(): array
 --- 
 ---
 
-Para mais informações sobre o projeto *[veja aqui](/Acme_Fitness_Laravel/README.md)*
+Para mais informações sobre o projeto *[veja aqui](/README.md)*
 
 ---
 

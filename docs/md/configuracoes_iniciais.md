@@ -59,6 +59,6 @@ php artisan serve
 
 ## \> Ao fim deste processo o ambiente estará configurado e pronto para testagem!
 
-Veja o tutorial *[testando a api](/Acme_Fitness_Laravel/docs/md/rodando_testes.md)*
+Veja o tutorial *[testando a api](/docs/md/rodando_testes.md)*
 
 ---
