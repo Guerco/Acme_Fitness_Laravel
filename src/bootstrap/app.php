@@ -63,7 +63,7 @@ return Application::configure(basePath: dirname(__DIR__))
 
             return response()->json(
                 $response, 
-                404,
+                422,
                 [],
                 JSON_PRETTY_PRINT
             );
