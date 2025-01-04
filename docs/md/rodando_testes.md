@@ -30,14 +30,14 @@ php artisan test --group=categorias
 
 ---
 
-### O diretório dos testes é *[/src/tests/Unit](/src/tests/Unit/Http/Produto/PostProdutoTest.phpd)*
+### O diretório dos testes é *[/src/tests/Unit](/src/tests/Unit)*
 - Nele você pode personalizar os testes e as requisições http testadas
 
 ---
 
 ### Configurando as Requests
 
-Ex: *[PostProdutoTest](/src/tests/Unit/Http/Produto/PostProdutoTest.phpd)*
+Ex: *[PostProdutoTest](/src/tests/Unit/Http/Produto/PostProdutoTest.php)*
 ``` php
 $response = $this->postJson(
     '/api/produtos/' , 
