@@ -98,7 +98,7 @@
     "cor" : "Cor da Variação", (opcional)
     "preco" : XX.XX,  
     "estoque" : XX,  
-    "prodito" : {
+    "produto" : {
         "id" : XX
     }
 }
@@ -117,7 +117,7 @@
 ``` 
 {
     "descontos" : XX.XX, (opcional)
-    "forma_pagamento" : "PIX" OU "Boleto" OU  "Cartão", (opcional) 
+    "forma_pagamento" : "PIX" OU "Boleto" OU  "Cartão", 
     "cliente" : {
         "id" : XX
     },
@@ -126,10 +126,10 @@
     },
     "variacoes" : [
         {
-            "quantidade" : XX,
             "variacao" : {
                 "id" : XX
             }
+            "quantidade" : XX,
         }
     ]
 }

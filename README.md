@@ -25,7 +25,7 @@ Antes de rodar o projeto, cheque as *[configurações iniciais](/docs/md/configu
 | [/Controllers](/src/app/Http/Controllers/)       | Gerenciadores de requisições HTTP. Contém os controladores responsáveis por processar as requisições e retornar as respostas. |
 | [/Resources](/src/app/Http/Resources/)       | Recursos de transformação de dados. Responsável por formatar e estruturar os dados antes de retornar na resposta. |
 | [/Requests](/src/app/Http/Requests/)       | Validação de requisições. Contém as classes que gerenciam a validação dos dados recebidos nas requisições. |
-| [/Services](/src/app/Services/)       | Lógica de negócios. Contém serviços que implementam funcionalidades específicas para serem utilizadas pelos controladores. |
+| [/Services](/src/app/Http/Services)       | Lógica de negócios. Contém serviços que implementam funcionalidades específicas para serem utilizadas pelos controladores. |
 | [/Models](/src/app/Models/)       | Modelos de dados. Contém as representações das tabelas no banco de dados e as interações com elas. |
 | [/migrations](/src/database/migrations/)       | Migrações do banco de dados. Contém os arquivos responsáveis por alterar o schema do banco, como criação de tabelas e colunas. |
 | [/factories](/src/database/factories/)       | Fábricas de dados. Utilizado para gerar dados de exemplo ou para popular o banco de dados com dados fictícios. |
