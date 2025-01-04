@@ -9,7 +9,7 @@
 ``` bash
 php artisan test
 ```
-- Este comando executará todos os casos de teste em *[/tests/Unit](/src/tests/Unit/;)*
+- Este comando executará todos os casos de teste em *[/tests/Unit](/src/tests/Unit/)*
 
 ### Você também pode executar testes por grupos:
 ``` bash
